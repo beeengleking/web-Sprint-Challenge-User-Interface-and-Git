@@ -216,12 +216,20 @@ button{
     background-color: white;
     border-radius: 10px;
 }
-.about-div{
+.about-div, .about-header{
     margin: 2%;
     padding: 2% 0;
     border-bottom:2px dotted #424242;
     
 }
+.about-div{
+    width: 45%;
+}
 .learn{
-    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+.work-together{
+    margin:4% 2% 4% 2%;
 }
