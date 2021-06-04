@@ -1,3 +1,4 @@
+/* css reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -18,7 +19,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 1px solid pink; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -46,9 +47,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+/* general styles */
 * {
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 html, body {
@@ -56,7 +58,7 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, a, button {
     font-size: 18px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
@@ -65,72 +67,124 @@ h1, h2, h3, h4, h5 {
 p {
     line-height: 1.4;
 }
-
+.margins{
+    margin: 2% 10% 0 10%;
+}
+/* navigation styles */
+.navBar{
+    display:flex ;
+    align-items: center;    
+}
+.lambdaBlack{
+    width: 30%;
+    padding-bottom: 5%;
+}
+nav{
+    width: 80%;
+    display: flex;
+}
+.topNav{
+    display: flex;
+    margin: 0 4%;
+    align-content: space-around;
+}
+.aNav{
+    margin: 0 5%;
+    text-decoration: none;
+    color: #424242;
+}
+/* header styles*/
+.jumboImg{
+    width: 100%;
+}
 .container {
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
 }
-
 .top-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-content: center;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
-
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
 }
-
+/* middle content styles */
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
-
 .middle-content h2 {
     padding: 0 2%;
     margin-bottom: 0;
 }
-
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.box-one{
+    background-color: teal;
+}
+.box-two{
+    background-color: gold;
+}
+.box-three{
+    background-color: cadetblue;
+}
+.box-four{
+    background-color: coral;
+}
+.box-five{
+    background-color: crimson;
+}
+.box-six{
+    background-color: forestgreen;
+}
+.box-seven{
+    background-color: darkorchid;
+}
+.box-eight{
+    background-color: hotpink;
+}
+.box-nine{
+    background-color: indigo;
+}
+.box-ten{
+    background-color: dodgerblue;
+}
 
+/* bottom content */
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
 }
-
 .bottom-content .text-container {
     padding-right: 4%;
 }
-
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
-
+/* footer styles */
 footer {
     width: 100%;
     background: black;
 }
-
 footer nav {
     width: 60%;
     display: flex;
@@ -139,8 +193,29 @@ footer nav {
     padding: 20px 2%;
     font-size: 14px;
 }
-
 footer nav a {
     color: white;
     text-decoration: none;
+}
+/* about.html styles */
+button{
+    padding: 1% 2%;
+    background-color: white;
+    border-radius: 10px;
+}
+.about-div, .about-header{
+    margin: 2%;
+    padding: 2% 0;
+    border-bottom:2px dotted #424242;    
+}
+.about-div{
+    width: 45%;
+}
+.learn{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+.work-together{
+    margin:4% 2% 4% 2%;
 }
